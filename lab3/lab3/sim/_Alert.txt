@@ -1,0 +1,35 @@
+Bitvis: 
+Bitvis: ***  WARNING #1  ***
+Bitvis:         13630 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x60
+Bitvis:                    Read from reg.: 00000001
+Bitvis: 
+
+Bitvis: 
+Bitvis: ***  WARNING #2  ***
+Bitvis:         38330 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x55
+Bitvis:                    Read from reg.: 00000010
+Bitvis: 
+
+Bitvis: 
+Bitvis: ***  WARNING #3  ***
+Bitvis:         39330 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected xCC
+Bitvis:                    Read from reg.: 00000010
+Bitvis: 
+
+Bitvis: 
+Bitvis: ***  WARNING #4  ***
+Bitvis:         64030 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x11
+Bitvis:                    Read from reg.: 00000011
+Bitvis: 
+
+Bitvis: 
+Bitvis: ***  WARNING #5  ***
+Bitvis:         65030 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x33
+Bitvis:                    Read from reg.: 00000011
+Bitvis: 
+

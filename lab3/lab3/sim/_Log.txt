@@ -1,0 +1,141 @@
+
+
+
+=====================================================================================================
+=====================================================================================================
+ Bitvis Utility Library v2.1.0 is being used by this simulation.
+ This is a *** LICENSED PRODUCT *** as given in the copyright notice of the VHDL code.
+ The free license granted is subject to the conditions given in the VHDL copyright notice.
+ -------
+ - Bitvis (Asker, Norway) helps customers develop FPGA, ASIC and Embedded SW  (www.bitvis.no)
+ - We provide services, verification IP and tools - and may also help as a sparring partner or mentor
+ - We also offer a 2-day course 'FPGA development Best Practices', which has received great feedback
+=====================================================================================================
+=====================================================================================================
+
+
+Bitvis:      
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:      ***  REPORT OF GLOBAL CTRL ***
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:                                IGNORE    STOP_LIMIT                      
+Bitvis:                NOTE         :  REGARD         0    
+Bitvis:                TB_NOTE      :  REGARD         0    
+Bitvis:                WARNING      :  REGARD         0    
+Bitvis:                TB_WARNING   :  REGARD         0    
+Bitvis:                MANUAL_CHECK :  REGARD         0    
+Bitvis:                ERROR        :  REGARD         1    
+Bitvis:                TB_ERROR     :  REGARD         1    
+Bitvis:                FAILURE      :  REGARD         1    
+Bitvis:                TB_FAILURE   :  REGARD         1    
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:      
+Bitvis:      
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:      ***  REPORT OF MSG ID PANEL ***
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:                ID                     Status
+Bitvis:                ----------------       ------
+Bitvis:                ID_UTIL_BURRIED      : DISABLED    
+Bitvis:                ID_UTIL_SETUP        : ENABLED    
+Bitvis:                ID_LOG_MSG_CTRL      : ENABLED    
+Bitvis:                ID_NEVER             : DISABLED    
+Bitvis:                ID_POS_ACK           : ENABLED    
+Bitvis:                ID_LOG_HDR           : ENABLED    
+Bitvis:                ID_SEQUENCER         : ENABLED    
+Bitvis:                ID_SEQUENCER_SUB     : ENABLED    
+Bitvis:                ID_BFM               : ENABLED    
+Bitvis:                ID_BFM_WAIT          : ENABLED    
+Bitvis:                ID_PACKET_INITIATE   : ENABLED    
+Bitvis:                ID_PACKET_COMPLETE   : ENABLED    
+Bitvis:                ID_PACKET_HDR        : ENABLED    
+Bitvis:                ID_PACKET_DATA       : ENABLED    
+Bitvis:                ID_TLM               : ENABLED    
+Bitvis:                ID_TLM_WAIT          : ENABLED    
+Bitvis:                ID_EXECUTOR          : ENABLED    
+Bitvis:                ID_EXECUTOR_WAIT     : ENABLED    
+Bitvis:                ID_VVC_CONSTRUCTOR   : ENABLED    
+Bitvis:                ALL_MESSAGES         : ENABLED    
+Bitvis:      ---------------------------------------------------------------------------------------------------------------------
+Bitvis:      
+Bitvis: ID_LOG_MSG_CTRL            0.0 ns  (Util burried)   Log messages enabled for ALL_MESSAGES. 
+Bitvis: ID_LOG_MSG_CTRL            0.0 ns  (Util burried)   Log messages disabled for ID_POS_ACK. 
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR                 0.0 ns  TB seq.          Start Simulation of TB for I2C master
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR                 0.0 ns  TB seq.          Setting and checking default values of I2C master I/O
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: ID_SEQUENCER_SUB         120.0 ns  TB seq.          Activate reset
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR               120.0 ns  TB seq.          Setting and check TMP175 resolution bits
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: 
+Bitvis: ***  WARNING #1  ***
+Bitvis:         13630 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x60
+Bitvis:                    Read from reg.: 00000001
+Bitvis: 
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR             23630.0 ns  TB seq.          Setting and check TMP175 TLOW register
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: 
+Bitvis: ***  WARNING #2  ***
+Bitvis:         38330 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x55
+Bitvis:                    Read from reg.: 00000010
+Bitvis: 
+Bitvis: 
+Bitvis: ***  WARNING #3  ***
+Bitvis:         39330 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected xCC
+Bitvis:                    Read from reg.: 00000010
+Bitvis: 
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR             49330.0 ns  TB seq.          Setting and check TMP175 THIGH register
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: 
+Bitvis: ***  WARNING #4  ***
+Bitvis:         64030 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x11
+Bitvis:                    Read from reg.: 00000011
+Bitvis: 
+Bitvis: 
+Bitvis: ***  WARNING #5  ***
+Bitvis:         65030 ns   TB seq.
+Bitvis:                    check_value() => Failed, for slv x00. Expected x33
+Bitvis:                    Read from reg.: 00000011
+Bitvis: 
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR             75030.0 ns  TB seq.          Preforming write and read of temperature reg.
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis: 
+Bitvis: 
+Bitvis: ID_LOG_HDR            100730.0 ns  TB seq.          TRUC
+Bitvis: --------------------------------------------------------------------------------------------------------------------------
+Bitvis:      
+Bitvis:      =====================================================================================================================
+Bitvis:      *** FINAL SUMMARY OF ALL ALERTS  ***      
+Bitvis:      =====================================================================================================================
+Bitvis:                                REGARDED   EXPECTED  IGNORED      Comment?
+Bitvis:                NOTE         :      0         0         0         ok      
+Bitvis:                TB_NOTE      :      0         0         0         ok      
+Bitvis:                WARNING      :      5         2         0         *** WARNING *** 
+Bitvis:                TB_WARNING   :      0         0         0         ok      
+Bitvis:                MANUAL_CHECK :      0         0         0         ok      
+Bitvis:                ERROR        :      0         0         0         ok      
+Bitvis:                TB_ERROR     :      0         0         0         ok      
+Bitvis:                FAILURE      :      0         0         0         ok      
+Bitvis:                TB_FAILURE   :      0         0         0         ok      
+Bitvis:      =====================================================================================================================
+Bitvis:      >> Simulation SUCCESS: No mismatch between counted and expected serious alerts
+Bitvis:      =====================================================================================================================
+Bitvis:      
+Bitvis:      
+

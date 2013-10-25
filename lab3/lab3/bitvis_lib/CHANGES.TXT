@@ -1,0 +1,79 @@
+Bitvis Utility Library - Overview on Versions and Changes
+==============================================================
+
+----------------------------------------------------------------------
+
+
+v2.1.0
+----------
+Released: 2013-09-25
+
+Note to users: 
+- If you use custom compile scripts, 
+  you must change the Bitvis_Util source 
+  directory name from src to src93, src2002 or src2008, 
+  depending on which VHDL version you compile for. 
+
+General: 
+- Added support for vhdl2008. 
+- Made a separate source directory for each vhdl version: src93, src2002 and src2008
+  The user must choose which of these src directories to compile
+- New compile scripts, in order to be able to choose between using the vhdl93, vhdl2002 or vhdl2008 version 
+- report_alert_counters() may now be called with an argument: 
+  - INTERMEDIATE = Print alert counters only
+  - FINAL        = Print counters and print simulation conclusion (Success/Fail)
+                   Typically call with FINAL from the end of the test sequencer
+
+New features: 
+- Added new random functions and procedures: random sl and time
+
+v2.0.0
+----------
+Released: 2013-08-09
+
+General:
+Major modifications to make a vhdl'93 compatible version, and at the same time maintain a 2002
+compatible version to allow 100% safe update of shared variables. To minimise the differences
+all protected variables that are not functionally needed for safe behaviour have been changed
+into ordinary shared variables - for instance when only a single process is allowed to modify
+a shared variable and no critical interaction between modification and a pure read.
+
+Common changes for vhdl'93 and 2002:
+- Type changes (Note: Changes related to this type changes are not listed explicitly)
+  - from protected to normal shared - with corresponding name change
+  - shared_initialised_util
+  - shared_msg_id_panel
+  - shared_log_file_name_is_set
+  - shared_alert_file_name_is_set
+  - shared_warned_time_stamp_trunc
+  - shared_alert_attention
+  - shared_stop_limit
+  - shared_log_hdr_for_waveview
+  - shared_seed1
+  - shared_seed2
+  - t_attention has been replaced by t_attention, which has a new litteral 'EXPECT'
+(Litteral COUNT has been replaced by REGARD, as they are all really counters)
+  -  Replaced protected methods in 'methods' by standard functions defined in a new package
+  'vhdl_version_layer' with functions to access protected or standard shared depending
+  on compatibility requirements. Hence there are two file versions of 'vhdl_version_layer'.
+
+  - Added message IDs
+  - ID_VVC_CONSTRUCTOR :  ***** Er navnet et felles navn????
+  - Some internal functionality has been modified or removed. Not visible for users.
+  - Improved some alert messages
+  - Fixed wrong order of scope and msg in alert calls in normalise-procedures
+
+  Changes NOT common for vhdl'93 and 2002:
+  - vhdl_version_layer split into vhdl_version_layer_93 and vhdl_version_layer_2002
+  - vhdl93: Substituted protected alert counter with ordinary shared variable.
+
+
+  v1.0.0
+  ----------
+  Released: 2013-04-09
+  First open source version.
+  Hence no change history
+(A list of changes from previous commercial versions is available for existing Bitvis Utility Library customers)
+
+
+
