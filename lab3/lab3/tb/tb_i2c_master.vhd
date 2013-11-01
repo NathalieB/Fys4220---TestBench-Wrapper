@@ -329,8 +329,6 @@ begin
     reg_data(1) <= "00000000";          --Expect zero as temp. is read only
     check_reg_value(temp_addr, reg_data, data, 2);
 
-	log(ID_LOG_HDR, "TRUC", C_SCOPE);
-
     wait for 100*clk_period;
     report_alert_counters(FINAL);
 

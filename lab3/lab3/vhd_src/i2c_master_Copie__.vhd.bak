@@ -248,7 +248,6 @@ port
 		begin
 		data_rx(bit_count) <=	data_rd(bit_count)  ;
 		rnw_i <= rnw ;
-		ack_error_i <= ack_error;
 			-- Set the clock of the I2C bus
 			if scl_oe = '1' then
 				scl <= scl_clk;
